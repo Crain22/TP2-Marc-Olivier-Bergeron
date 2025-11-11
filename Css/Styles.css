@@ -17,7 +17,11 @@
      /* disposition verticale des sections header, main et footer */
      display: flex;
      flex-direction: column;
-     height: 100vh; /* 100% de la hauteur du viewport pour assurer la réactivité verticale */
+     height: 100vh;
+     max-width: 1000px;
+     min-width: 500px;
+     margin: auto;
+     /* 100% de la hauteur du viewport pour assurer la réactivité verticale */
      gap: var(--gap);
      padding: var(--gap);
 
@@ -43,8 +47,9 @@
          }
 
          .menuItem {
-             flex-grow: 1; /* taille adaptative */
-             font-size: 0.60em;
+             flex-grow: 1;
+             /* taille adaptative */
+             font-size: 0.75em;
              font-weight: bold;
              text-decoration: none;
              color: dodgerblue;
@@ -57,8 +62,10 @@
      }
 
      .main {
-         flex: 1; /* permettre de le formatage flex du parent */
-         min-height: 10vh; /* hauteur minimum relative à la hauteur du viewport*/
+         flex: 1;
+         /* permettre de le formatage flex du parent */
+         min-height: 10vh;
+         /* hauteur minimum relative à la hauteur du viewport*/
 
          /* contrecarrer les styles de la classe page */
          border: none;
@@ -107,11 +114,11 @@
      .main>* {
          background: white;
          padding: var(--gap);
-         border: 1px solid gray;
      }
  }
 
- .page>* { /* cibler tout les enfants enfant de l'éléments de classe page */
+ .page>* {
+     /* cibler tout les enfants enfant de l'éléments de classe page */
      background: lightgray;
      padding: var(--gap);
      border: 1px solid gray;
@@ -156,21 +163,103 @@
      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
  }
 
- .momo-trust-display-regular {
-     font-family: "Momo Trust Display", sans-serif;
+ .fjalla-one-regular {
+     font-family: "Fjalla One", sans-serif;
      font-weight: 400;
      font-style: normal;
-     font-size: 1.8em;
  }
 
  .author {
-     width: 30%;
      min-width: 300px;
-     margin: auto;
-     margin-top: 50px;
+     margin-top: 110px;
+     margin-left: 300px;
      font-size: 1.5em;
+     text-align: end;
 
      ul {
          list-style-type: none;
      }
+ }
+
+ @media (max-width: 500px) {
+     .imagePageAI {
+         width: 50px;
+         height: 50px;
+         margin-top: 35px;
+     }
+ }
+
+ .descriptionText {
+     text-align: justify;
+     font-size: 20px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .descriptionList {
+     margin-left: 15px;
+ }
+
+ .descriptionList>* {
+     margin-top: 15px;
+ }
+
+ .imagePageAI {
+     max-width: 175px;
+     max-height: 175px;
+     margin-top: 35px;
+     margin-right: 70px;
+     margin-left: 70px;
+ }
+
+ .imagePageSecurite1 {
+     max-width: 550px;
+     max-height: 550px;
+     margin-top: 35px;
+     margin-bottom: 35px;
+     margin-left: 175px;
+ }
+
+ .imagePageSecurite2 {
+     margin-left: 275px;
+ }
+
+ .centerTextPageSecurity {
+     text-align: center;
+ }
+
+ .boldText {
+     font-weight: bold;
+ }
+
+ .videoYoutube {
+     margin-left: 90px;
+     margin-top: 35px;
+     margin-bottom: 35px;
+ }
+
+ .imagePageData {
+     max-width: 600px;
+     max-height: 600px;
+     margin-top: 20px;
+     margin-left: 175px;
+ }
+
+ .avatar {
+     border-radius: 100%;
+     width: 250px;
+     height: 250px;
+     margin-left: 50px;
+     margin-top: 50px;
+ }
+
+ .indexText {
+     text-align: justify;
+     font-size: 25px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .centerText {
+     text-align: center;
  }
