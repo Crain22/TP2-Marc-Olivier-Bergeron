@@ -16,7 +16,6 @@
  .page {
      /* disposition verticale des sections header, main et footer */
      display: flex;
-     border: 10px solid red;
      flex-direction: column;
      height: 100vh;
      max-width: 1000px;
