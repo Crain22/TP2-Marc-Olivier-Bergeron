@@ -62,6 +62,7 @@
      }
 
      .main {
+
          flex: 1;
          /* permettre de le formatage flex du parent */
          min-height: 10vh;
@@ -71,7 +72,7 @@
          border: none;
          padding: 0px;
          background: white;
-
+         border: 1px solid gray;
          /* Alignement horizontal des éléments enfants */
          display: flex;
          flex-direction: row;
@@ -182,7 +183,6 @@
  }
 
  .descriptionText {
-     text-align: justify;
      font-size: 20px;
      margin-top: 10px;
      margin-bottom: 10px;
@@ -211,6 +211,7 @@
      margin-top: 35px;
      margin-bottom: 35px;
      margin-left: 175px;
+
  }
 
  .imagePageSecurite2 {
@@ -227,16 +228,17 @@
  }
 
  .videoYoutube {
-     margin-left: 115px;
-     margin-top: 35px;
-     margin-bottom: 35px;
+     margin-left: 50px;
+     margin-right: 50px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     aspect-ratio: 16/9;
  }
 
  .imagePageData {
-     max-width: 600px;
-     max-height: 600px;
      margin-top: 15px;
-     margin-left: 175px;
+     margin-left: 50px;
+     margin-right: 50px;
  }
 
  .avatar {
@@ -248,7 +250,6 @@
  }
 
  .indexText {
-     text-align: justify;
      font-size: 25px;
      margin-top: 10px;
      margin-bottom: 10px;
@@ -259,6 +260,11 @@
      text-align: center;
  }
 
+ .spacingText {
+     margin-left: 50px;
+     margin-right: 50px;
+ }
+
  @media (max-width: 500px) {
      .imagePageAI {
          width: 50px;
@@ -266,6 +272,7 @@
          margin-left: 50px;
          margin-right: 40px;
          margin-top: 35px;
+         margin-bottom: 35px;
      }
 
      .avatar {
@@ -282,18 +289,10 @@
          font-size: 1.2em;
      }
 
-     .imagePageData {
-         width: 350px;
-         height: 200px;
-         margin-left: 52px;
-     }
-
      .videoYoutube {
-         width: 350px;
-         height: 200px;
-         margin-left: 52px;
-         margin-top: 35px;
-         margin-bottom: 35px;
+         width: 300px;
+         height: 150px;
+         margin-left: 25px;
      }
 
      .imagePageSecurite1 {
