@@ -124,7 +124,6 @@
      border: 1px solid gray;
  }
 
-
  /* disposer une liste d'icone font-awsome vertivalement */
  .iconList {
      display: flex;
@@ -145,7 +144,6 @@
  .fa-icon:hover {
      color: blue;
  }
-
 
  /*** classes pour l'apparence de la barre de défilement ***/
  ::-webkit-scrollbar {
@@ -295,7 +293,6 @@
      .author {
          font-size: 1.5em;
      }
-
 
      .imagePageSecurite1 {
          margin-left: 0px;
