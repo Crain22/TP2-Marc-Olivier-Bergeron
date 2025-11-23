@@ -17,9 +17,8 @@
      /* disposition verticale des sections header, main et footer */
      display: flex;
      flex-direction: column;
-     height: 100vh;
+     min-height: 118vh;
      max-width: 1000px;
-     min-width: 500px;
      margin: auto;
      /* 100% de la hauteur du viewport pour assurer la réactivité verticale */
      gap: var(--gap);
@@ -65,7 +64,7 @@
 
          flex: 1;
          /* permettre de le formatage flex du parent */
-         min-height: 10vh;
+         min-height: 100vh;
          /* hauteur minimum relative à la hauteur du viewport*/
 
          /* contrecarrer les styles de la classe page */
@@ -171,11 +170,9 @@
  }
 
  .author {
-     max-width: 400px;
-     margin-top: 110px;
-     margin-left: 275px;
-     font-size: 1.5em;
-     text-align: end;
+     margin-top: 35px;
+     font-size: 2.0em;
+     text-align: center;
 
      ul {
          list-style-type: none;
@@ -201,21 +198,31 @@
      max-width: 175px;
      max-height: 175px;
      margin-top: 35px;
+     margin-bottom: 35px;
      margin-right: 69px;
      margin-left: 69px;
  }
 
  .imagePageSecurite1 {
-     max-width: 550px;
-     max-height: 550px;
      margin-top: 35px;
      margin-bottom: 35px;
-     margin-left: 175px;
-
+     margin-left: 30px;
+     margin-right: 30px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     aspect-ratio: 17/10;
  }
 
  .imagePageSecurite2 {
-     margin-left: 275px;
+     margin-top: 35px;
+     margin-bottom: 35px;
+     margin-left: 150px;
+     margin-right: 150px;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     aspect-ratio: 8.9/12;
  }
 
  .centerTextPageSecurity {
@@ -242,11 +249,14 @@
  }
 
  .avatar {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     aspect-ratio: 1/1;
      border-radius: 100%;
-     max-width: 250px;
-     max-height: 250px;
-     margin-left: 50px;
-     margin-top: 50px;
+     margin-left: 300px;
+     margin-right: 300px;
+     margin-top: 35px;
  }
 
  .indexText {
@@ -276,34 +286,27 @@
      }
 
      .avatar {
-         width: 130px;
-         height: 130px;
-         margin-left: 0px;
-         margin-top: 0px;
+         width: 150px;
+         height: 150px;
+         margin-left: auto;
+         margin-right: auto
      }
 
      .author {
-         width: 300px;
-         margin-top: 20px;
-         margin-left: 0px;
-         font-size: 1.2em;
+         font-size: 1.5em;
      }
 
-     .videoYoutube {
-         width: 300px;
-         height: 150px;
-         margin-left: 25px;
-     }
 
      .imagePageSecurite1 {
-         width: 400px;
-         height: 250px;
-         margin-left: 15px;
+         margin-left: 0px;
+         margin-right: 0px;
+         width: 335px;
+         height: 195px;
      }
 
      .imagePageSecurite2 {
-         margin-left: 125px;
-         width: 200px;
-         height: 275px;
+         margin-left: 70px;
+         width: 210px;
+         height: 285px;
      }
  }
