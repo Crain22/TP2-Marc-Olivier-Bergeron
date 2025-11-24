@@ -19,7 +19,7 @@
      flex-direction: column;
      min-height: 118vh;
      max-width: 1000px;
-     min-width: 500px;
+     min-width: 490px;
      margin: auto;
      /* 100% de la hauteur du viewport pour assurer la réactivité verticale */
      gap: var(--gap);
@@ -253,8 +253,9 @@
      background-size: cover;
      aspect-ratio: 1/1;
      border-radius: 100%;
-     margin-left: 300px;
-     margin-right: 300px;
+     max-width: 250px;
+     max-height: 250px;
+     margin: auto;
      margin-top: 35px;
  }
 
@@ -285,10 +286,8 @@
      }
 
      .avatar {
-         width: 150px;
-         height: 150px;
-         margin-left: auto;
-         margin-right: auto
+         max-width: 150px;
+         max-height: 150px;
      }
 
      .author {
