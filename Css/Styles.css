@@ -19,6 +19,7 @@
      flex-direction: column;
      min-height: 118vh;
      max-width: 1000px;
+     min-width: 500px;
      margin: auto;
      /* 100% de la hauteur du viewport pour assurer la réactivité verticale */
      gap: var(--gap);
